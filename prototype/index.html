@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Is Thinking?</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <section class="institution-banner">
+        <div>
+          <p class="eyebrow">Course Interface</p>
+          <p class="banner-title">Digital Society and Knowledge</p>
+        </div>
+        <div class="banner-meta">
+          <span id="environment-chip" class="banner-chip">Environment pending</span>
+          <span id="profile-chip" class="banner-chip">Profile emerging</span>
+        </div>
+      </section>
+
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">AI-Mediated Academic Journey</p>
+          <h1>Who Is Thinking?</h1>
+        </div>
+        <div class="topbar-meta">
+          <div class="meta-pill" id="week-pill">Week 0</div>
+          <div class="meta-pill" id="chapter-pill">Prologue</div>
+        </div>
+      </header>
+
+      <main class="main-grid">
+        <section class="primary-panel">
+          <div class="chapter-head">
+            <p class="chapter-label" id="chapter-label"></p>
+            <h2 id="screen-title"></h2>
+            <p class="turn-question" id="turn-question"></p>
+          </div>
+
+          <div class="chapter-signals">
+            <div class="signal-card">
+              <p class="signal-label">Primary Tension</p>
+              <p id="chapter-tension" class="signal-value"></p>
+            </div>
+            <div class="signal-card">
+              <p class="signal-label">AI Role At Risk</p>
+              <p id="chapter-role-risk" class="signal-value"></p>
+            </div>
+            <div class="signal-card">
+              <p class="signal-label">Current Pattern</p>
+              <p id="chapter-pattern" class="signal-value"></p>
+            </div>
+          </div>
+
+          <div class="chapter-timeline" id="chapter-timeline"></div>
+
+          <div class="story-panel">
+            <div class="text-stack" id="screen-body"></div>
+            <section class="ai-panel hidden" id="ai-panel">
+              <p class="panel-kicker" id="ai-panel-title">Aster</p>
+              <p id="ai-panel-body"></p>
+            </section>
+            <section class="feedback-panel hidden" id="feedback-panel">
+              <p class="panel-kicker" id="feedback-title"></p>
+              <p id="feedback-body"></p>
+            </section>
+          </div>
+
+          <div class="choice-panel">
+            <div class="choice-header">
+              <h3>Decision</h3>
+              <p id="choice-hint">Your choices shape how AI enters the learning process.</p>
+            </div>
+            <div class="choices-grid" id="choices-grid"></div>
+          </div>
+        </section>
+
+        <aside class="status-column">
+          <section class="status-panel">
+            <h3>Learning State</h3>
+            <div class="meter-list" id="meters"></div>
+            <div class="chip-grid" id="signal-chips"></div>
+          </section>
+
+          <section class="status-panel">
+            <h3>Current Pressure</h3>
+            <p id="current-pressure"></p>
+            <div id="pressure-band" class="pressure-band"></div>
+          </section>
+
+          <section class="status-panel">
+            <h3>People In The Turn</h3>
+            <div id="cast-list" class="cast-list"></div>
+          </section>
+
+          <section class="status-panel">
+            <h3>Chapter Output</h3>
+            <div id="chapter-output" class="chapter-output"></div>
+          </section>
+
+          <section class="status-panel">
+            <h3>Recent Decisions</h3>
+            <div id="decision-log" class="decision-log"></div>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script src="./data/state-model.js"></script>
+    <script src="./data/game-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
